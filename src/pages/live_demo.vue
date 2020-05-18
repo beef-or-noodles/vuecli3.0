@@ -1,18 +1,12 @@
 <template>
     <div>
-
+        视频聊天demo
     </div>
 </template>
 
 <script>
     export default {
-        name: "index",
-        data() {
-            return {
-
-            }
-        },
-
+        name: "live_demo"
     }
 </script>
 
