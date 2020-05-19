@@ -3,7 +3,7 @@
  */
 /* 注册模块 */
 const routes = [
-    /*{
+    /* {
         path: '/',
         component: () => import('../pages/index')
     },*/
@@ -11,6 +11,6 @@ const routes = [
         path: '/',
         component: () => import('../pages/live_demo')
     },
-    {path: '*',redirect: '/'}//防输错或者没找到页面路由错误，跳转到首页
+    { path: '*', redirect: '/' }// 防输错或者没找到页面路由错误，跳转到首页
 ]
 export default routes
