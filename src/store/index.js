@@ -4,11 +4,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
-import user from './user'
 import createPersistedState from 'vuex-persistedstate'
+import user from './user'
+import common from './common'
+
 const store = new Vuex.Store({
     modules: {
-        user
+        user,
+        common
     },
     plugins: [createPersistedState({
         storage: window.sessionStorage,

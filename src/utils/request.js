@@ -49,6 +49,7 @@ function setloading() {
     if (loadingCount === 0) {
         timer = setTimeout(() => {
             console.log('加载动画')
+            store.commit('setLoading', true)
         }, 300)
     }
     loadingCount++
@@ -59,6 +60,7 @@ function endLoading() {
     if (loadingCount <= 0) return
     loadingCount--
     if (loadingCount === 0) {
+        store.commit('setLoading', false)
         window.clearTimeout(timer)
     }
 }
