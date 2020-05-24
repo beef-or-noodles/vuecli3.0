@@ -13,6 +13,7 @@
 
 <script>
 import * as QNRTC from 'pili-rtc-web'
+import { orderDetail } from '@/api/index'
 export default {
     name: 'LiveDemo',
     data() {
@@ -30,6 +31,9 @@ export default {
         this.myRoom = new QNRTC.StreamModeSession()
         // 关闭 SDK 的 console 打印
         QNRTC.log.setLevel('disable')
+        orderDetail(1).then(data => {
+
+        })
     },
     destroyed() {
         // 销毁
@@ -96,7 +100,7 @@ export default {
                         this.outRoom()
                     }
                 } catch (e) {
-                    alert('设备连接不正常')
+                    // alert('设备连接不正常')
                 }
             }
         },

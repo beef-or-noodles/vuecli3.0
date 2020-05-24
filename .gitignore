@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+/7yunLive
 
 # local env files
 .env.local
