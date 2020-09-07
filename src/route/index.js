@@ -3,14 +3,14 @@
  */
 /* 注册模块 */
 const routes = [
-    /* {
-        path: '/',
-        component: () => import('../pages/index')
-    },*/
     {
         path: '/',
-        component: () => import('../pages/live_demo')
+        component: () => import('../pages/index')
     },
-    { path: '*', redirect: '/' }// 防输错或者没找到页面路由错误，跳转到首页
+    {
+        path: '/404',
+        component: () => import('../pages/404')
+    },
+    { path: '*', redirect: '/404' }// 防输错或者没找到页面路由错误，跳转到首页
 ]
 export default routes
